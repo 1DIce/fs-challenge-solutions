@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.strategy-compare {
+  display: flex;
+  gap: 8px;
+}
+
+.section {
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 6px;
+  width: fit-content;
+  padding: 8px;
+  min-width: 300px;
+}

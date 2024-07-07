@@ -1,0 +1,7 @@
+<h4>On Push Root</h4>
+
+<app-message
+  *ngFor="let message of messages; trackBy: trackById"
+  [message]="message"
+  parentType="ON_PUSH"
+></app-message>

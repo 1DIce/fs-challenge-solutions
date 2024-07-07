@@ -1,0 +1,7 @@
+<h4>Default Strategy Root</h4>
+
+<app-message
+  *ngFor="let message of messages; trackBy: trackById"
+  [message]="message"
+  parentType="DEFAULT"
+></app-message>

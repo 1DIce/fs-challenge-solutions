@@ -1,0 +1,16 @@
+<h3>Default vs. On Push Change Detection</h3>
+<div class="section">
+  <h4>New Message</h4>
+  <input #input (keyup)="triggerChangeDetection()" />
+  <button (click)="createMessage(input.value)">Create Message</button>
+</div>
+<div class="strategy-compare">
+  <div class="section">
+    <app-default-strategy-root
+      [messages]="messages"
+    ></app-default-strategy-root>
+  </div>
+  <div class="section">
+    <app-on-push-root [messages]="messages"></app-on-push-root>
+  </div>
+</div>
